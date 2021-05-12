@@ -8,7 +8,7 @@ module.exports = (env, argv) => {
     env.platform = env.platform || "chrome"
     return {
         context: path.resolve(__dirname, 'src'),
-        devtool: 'inline-source-map',
+        devtool: env.development ? 'inline-source-map' : false,
         entry: {
             'background': './background.js',
             'content': './content.js',

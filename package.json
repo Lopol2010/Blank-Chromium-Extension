@@ -1,16 +1,16 @@
 {
   "name": "extension",
   "version": "1.0.0",
-  "description": "Build and debug chrome extension",
+  "description": "Boilerplate project for chromium extension development",
   "scripts": {
     "test": "ospec",
     "start": "webpack-cli -w --env development",
-    "build": "webpack-cli -b",
+    "build": "webpack-cli",
     "build:opera": "webpack-cli --env platform=opera",
     "build:chrome": "webpack-cli"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["chrome", "opera", "chromium", "boilerplate"],
+  "author": "Lopol2010",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.0",

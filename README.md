@@ -6,4 +6,5 @@ Values are: opera, chrome
 
 #### TODO:
 * Add chrome.i18n 
+* Add typescript 
 

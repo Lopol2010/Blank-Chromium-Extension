@@ -1,10 +1,10 @@
 {
 	"manifest_version" : 3,
-	"name" : "...",
-	"short_name" : "...",
+	"name" : "Chrome Extension Boilerplate Project",
+	"short_name" : "Boilerplate",
 	"version" : "1.0",
-	"author" : "...",
-	"description" : "...",
+	"author" : "Lopol2010",
+	"description" : "Boilerplate extension to quickly start development",
 	
 	"icons" : {
 		"16" : "icons/16x16.png",
@@ -19,16 +19,17 @@
 			"all_frames": true,
 			"matches": ["*://*/*"],
 			"js": ["content.js"],
+            // "css": ["content.css"], // We include styles in content.js!
 			"run_at": "document_end"
 		}	
 	],
-
+    
 	"background" : {
 		"service_worker" : "background.js"
 	},
 	
     "action": {
-        "default_title": "...",
+        "default_title": "That's cool icon!",
         "default_icon": "icons/48x48.png",
 		"default_popup": "popup/popup.html"
     }

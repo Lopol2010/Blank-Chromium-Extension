@@ -4,17 +4,22 @@
   "description": "Build and debug chrome extension",
   "scripts": {
     "test": "ospec",
-    "start": "webpack-cli --config ./webpack.chrome.js -w",
-    "build": "webpack-cli --config ./webpack.chrome.js",
-    "build:opera": "webpack-cli --config ./webpack.opera.js",
-    "build:chrome": "webpack-cli --config ./webpack.chrome.js"
+    "start": "webpack-cli -w --env development",
+    "build": "webpack-cli -b",
+    "build:opera": "webpack-cli --env platform=opera",
+    "build:chrome": "webpack-cli"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
+    "@babel/preset-env": "^7.14.1",
+    "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^8.1.1",
     "css-loader": "^5.2.4",
+    "html-webpack-plugin": "^5.3.1",
     "mini-css-extract-plugin": "^1.6.0",
     "mithril": "^2.0.4",
     "node-sass": "^6.0.0",
@@ -23,5 +28,8 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.37.0",
     "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "@types/chrome": "0.0.139"
   }
 }
